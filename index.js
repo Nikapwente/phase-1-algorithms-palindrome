@@ -1,9 +1,22 @@
 function isPalindrome(word) {
   // Write your algorithm here
+
+  const str = word; 
+for (let i = 0, j=str.length-1; i < str.length; i++, j--) { 
+    if (str[i] === str[j]) {
+      return true 
+    } else {return false} 
+    
+};
+  
 }
 
 /* 
   Add your pseudocode here
+  1. Iterate through the array with the for loop.
+  2. Define two indexes, one zero, i and the other, string length j.
+  3. Increment i and decrement j.
+  4. If i === j, the str is a palindrome.
 */
 
 /*
